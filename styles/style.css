@@ -1,9 +1,13 @@
 :root {
   --bg-color: #282828;
   --blue-color: #83a598;
-  --green-color: #b8bb26;
-  --aqua-color: #689d6a;
+  --neutral-blue-color: #458588;
   font-family: Roboto, FantasqueSansM Nerd Font Mono;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
 }
 
 body, h1, h2, ul, p {
@@ -21,6 +25,12 @@ h1, h2 {
   min-width: 100vw;
 }
 
+section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 section {
   padding: 2rem;
 }
@@ -33,11 +43,6 @@ section {
   flex-direction: column;
   gap: 2rem;
 
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 
   h1 {
     /*background-color: var(--green-color);*/
@@ -71,6 +76,11 @@ section {
     }
   }
 
+  #contact .icon {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+  }
+
   #hard-skills ul,
   #soft-skills ul,
   #hobbies ul {
@@ -83,7 +93,7 @@ section {
   #hard-skills li,
   #soft-skills li,
   #hobbies li {
-    background-color: var(--aqua-color);
+    background-color: var(--neutral-blue-color);
     color: white;
     border-radius: 10px;
     padding: 0.3rem;
@@ -100,21 +110,22 @@ section {
   color: var(--bg-color);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+  gap: 1rem;
 
   h2 {
-    /*background-color: var(--bg-color);*/
-    /*color: white;*/
     border-bottom: solid;
   }
 
   .title {
     font-weight: bold;
+  }
+
+  #experiences > ul,
+  #certification > ul,
+  #ctfs > ul,
+  #education > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
