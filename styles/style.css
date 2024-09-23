@@ -1,5 +1,7 @@
 :root {
   --bg-color: #282828;
+  --bg3-color: #665c54;
+  --fg3-color: #bdae93;
   --blue-color: #83a598;
   --neutral-blue-color: #458588;
   font-family: Roboto, FantasqueSansM Nerd Font Mono;
@@ -7,12 +9,13 @@
 
 a {
   color: unset;
-  text-decoration: unset;
 }
 
 body, h1, h2, ul, p {
   margin: unset;
 }
+
+
 
 h1, h2 {
   padding: 0.3rem;
@@ -93,7 +96,7 @@ section {
   #hard-skills li,
   #soft-skills li,
   #hobbies li {
-    background-color: var(--neutral-blue-color);
+    background-color: var(--bg-color);
     color: white;
     border-radius: 10px;
     padding: 0.3rem;
