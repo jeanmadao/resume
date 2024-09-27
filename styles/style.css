@@ -24,8 +24,7 @@ h1, h2 {
 #page {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 1800px;
 }
 
 section > div {
@@ -123,9 +122,20 @@ section {
     font-weight: bold;
   }
 
+  .columns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .columns .column {
+    flex: 1;
+  }
+
+  .columns .column,
   #experiences > ul,
   #certification > ul,
   #ctfs > ul,
+  #projects > ul,
   #education > ul {
     display: flex;
     flex-direction: column;
